@@ -43,7 +43,7 @@ class BuildFeedTests(unittest.TestCase):
         self.assertEqual(build_feed.resolve_steam_app_id("Elden Ring", lambda url: results), 1245620)
         self.assertIsNone(build_feed.resolve_steam_app_id("Elden", lambda url: results))
 
-    def test_feed_drops_unmatched_games_dedupes_and_uses_cache(self):
+    def test_feed_preserves_unmatched_and_duplicate_app_ids_and_uses_cache(self):
         games = [
             {"title": "Known", "slug": "k", "metascore": 90},
             {"title": "Unknown", "slug": "u", "metascore": 80},
@@ -54,8 +54,20 @@ class BuildFeedTests(unittest.TestCase):
         cache = {"known": 5}
         feed = build_feed.build_feed(games, cache, lambda title: calls.append(title) or ids[title])
         self.assertEqual(calls, ["Unknown", "Known Again"])
-        self.assertEqual([entry["appid"] for entry in feed], [5])
+        self.assertEqual([entry["appid"] for entry in feed], [5, 5, None])
         self.assertEqual(feed[0]["title"], "Known")
+        self.assertEqual(feed[2]["title"], "Unknown")
+
+    def test_finder_rejects_missing_titles_and_changing_totals(self):
+        with self.assertRaises(RuntimeError):
+            build_feed.fetch_metacritic_games(2026, lambda url: finder_page(1, [""]))
+        pages = iter([finder_page(25, ["G%d" % i for i in range(24)]), finder_page(24, ["G24"])])
+        with self.assertRaises(RuntimeError):
+            build_feed.fetch_metacritic_games(2026, lambda url: next(pages))
+
+    def test_finder_rejects_small_partial_result(self):
+        with self.assertRaises(RuntimeError):
+            build_feed.fetch_metacritic_games(2026, lambda url: finder_page(10, ["G%d" % i for i in range(9)]))
 
 
 if __name__ == "__main__":

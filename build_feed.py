@@ -46,17 +46,21 @@ def fetch_metacritic_games(year, fetch=get_json):
             "componentType": "Finder", "apiKey": METACRITIC_API_KEY,
         })
         data = fetch(FINDER_URL + "?" + query)["data"]
-        total = int(data["totalResults"])
+        page_total = int(data["totalResults"])
+        if total is not None and total != page_total:
+            raise RuntimeError("Metacritic's result count changed while paging.")
+        total = page_total
         items = data["items"]
         if not items:
             break
         for item in items:
             title = (item.get("title") or "").strip()
-            if title:
-                score = (item.get("criticScoreSummary") or {}).get("score")
-                games.append({"title": title, "slug": item.get("slug") or "", "metascore": score})
+            if not title:
+                raise RuntimeError("Metacritic returned a game without a title.")
+            score = (item.get("criticScoreSummary") or {}).get("score")
+            games.append({"title": title, "slug": item.get("slug") or "", "metascore": score})
         offset += PAGE_SIZE
-    if total is None or len(games) < total * 0.9:
+    if not total or len(games) != total:
         raise RuntimeError("Metacritic returned %d of %s expected games." % (len(games), total))
     return games
 
@@ -77,12 +81,8 @@ def build_feed(games, cache, resolve=resolve_steam_app_id, delay=0.0):
         if key not in cache:
             cache[key] = resolve(game["title"])
             time.sleep(delay)
-        if cache[key]:
-            feed.append({"appid": cache[key], "title": game["title"], "metascore": game["metascore"]})
-    unique = {}
-    for entry in feed:
-        unique.setdefault(entry["appid"], entry)
-    return sorted(unique.values(), key=lambda entry: entry["appid"])
+        feed.append({"appid": cache[key], "title": game["title"], "metascore": game["metascore"]})
+    return sorted(feed, key=lambda entry: (entry["title"].casefold(), entry["appid"] or 0))
 
 
 def read_json(path, default):
@@ -106,11 +106,10 @@ def main():
     # Misses are retried on every run so newly listed Steam pages are picked up.
     cache = {key: value for key, value in cache.items() if value}
     feed = build_feed(games, cache, delay=0.3)
-    if not feed:
-        raise RuntimeError("No Metacritic games could be matched to Steam App IDs; feed not updated.")
     write_json(CACHE_PATH, cache)
     write_json(FEED_PATH, feed)
-    print("Metacritic games: %d. Matched to Steam: %d." % (len(games), len(feed)))
+    print("Metacritic games: %d. Matched to Steam: %d." %
+          (len(feed), sum(1 for entry in feed if entry["appid"])))
 
 
 if __name__ == "__main__":
