@@ -96,7 +96,7 @@
   },
   {
     "appid": 4017880,
-    "metascore": 69,
+    "metascore": 70,
     "title": "ANOMALITH"
   },
   {
@@ -168,6 +168,11 @@
     "appid": 2001760,
     "metascore": 71,
     "title": "Beast of Reincarnation"
+  },
+  {
+    "appid": null,
+    "metascore": 48,
+    "title": "Beyond the Dark: Nightwatch"
   },
   {
     "appid": null,
@@ -471,7 +476,7 @@
   },
   {
     "appid": 3810510,
-    "metascore": 78,
+    "metascore": 77,
     "title": "DERELIKT"
   },
   {
@@ -688,6 +693,11 @@
     "appid": null,
     "metascore": 80,
     "title": "Fallout 4: Anniversary Edition"
+  },
+  {
+    "appid": 2831000,
+    "metascore": 76,
+    "title": "Faraway"
   },
   {
     "appid": 3920610,
@@ -1476,7 +1486,7 @@
   },
   {
     "appid": 1799840,
-    "metascore": 87,
+    "metascore": 89,
     "title": "Queen's Domain"
   },
   {
@@ -1956,7 +1966,7 @@
   },
   {
     "appid": 3884860,
-    "metascore": 84,
+    "metascore": 82,
     "title": "The Wolf Among Us Remastered"
   },
   {
@@ -2031,7 +2041,7 @@
   },
   {
     "appid": 3642010,
-    "metascore": 70,
+    "metascore": 71,
     "title": "Truck-kun is Supporting Me From Another World?!"
   },
   {
@@ -2166,7 +2176,7 @@
   },
   {
     "appid": null,
-    "metascore": 84,
+    "metascore": 86,
     "title": "World of Warcraft: Forever"
   },
   {
