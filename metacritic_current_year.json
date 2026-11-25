@@ -146,7 +146,7 @@
   },
   {
     "appid": 2396130,
-    "metascore": 73,
+    "metascore": 74,
     "title": "Australia Did It: End-of-the-World Railway Defense Business"
   },
   {
@@ -1171,7 +1171,7 @@
   },
   {
     "appid": 4259360,
-    "metascore": 78,
+    "metascore": 80,
     "title": "Milki Delivery"
   },
   {
@@ -1221,7 +1221,7 @@
   },
   {
     "appid": 4463520,
-    "metascore": 67,
+    "metascore": 69,
     "title": "Moomin: Midsummer Madness"
   },
   {
@@ -1486,7 +1486,7 @@
   },
   {
     "appid": 1799840,
-    "metascore": 89,
+    "metascore": 90,
     "title": "Queen's Domain"
   },
   {
@@ -1668,6 +1668,11 @@
     "appid": 3432480,
     "metascore": 85,
     "title": "Shards of Order"
+  },
+  {
+    "appid": null,
+    "metascore": 54,
+    "title": "Shrek 2 Remastered"
   },
   {
     "appid": 1636440,
