@@ -25,6 +25,11 @@
     "title": "4PGP"
   },
   {
+    "appid": 2784470,
+    "metascore": 78,
+    "title": "9 Kings"
+  },
+  {
     "appid": 3749330,
     "metascore": 70,
     "title": "A Storied Life: Tabitha"
@@ -146,7 +151,7 @@
   },
   {
     "appid": 2396130,
-    "metascore": 74,
+    "metascore": 75,
     "title": "Australia Did It: End-of-the-World Railway Defense Business"
   },
   {
@@ -1060,6 +1065,11 @@
     "title": "Lightyear Frontier"
   },
   {
+    "appid": 1677110,
+    "metascore": 75,
+    "title": "Lightyear Frontier"
+  },
+  {
     "appid": 2482940,
     "metascore": 68,
     "title": "Little Nightmares VR: Altered Echoes"
@@ -1315,11 +1325,6 @@
     "title": "Nioh 3"
   },
   {
-    "appid": 2525510,
-    "metascore": 74,
-    "title": "NITRO GEN OMEGA"
-  },
-  {
     "appid": 1488490,
     "metascore": 75,
     "title": "Nivalis Nights"
@@ -1376,7 +1381,7 @@
   },
   {
     "appid": 2929250,
-    "metascore": 75,
+    "metascore": 74,
     "title": "over the hill"
   },
   {
@@ -1455,6 +1460,11 @@
     "title": "Poppy Playtime: Chapter 5"
   },
   {
+    "appid": 4100940,
+    "metascore": 74,
+    "title": "Poppy Playtime: Chapter 5"
+  },
+  {
     "appid": 4229450,
     "metascore": 76,
     "title": "PowerWash Simulator 2: Star Wars Pack"
@@ -1486,7 +1496,7 @@
   },
   {
     "appid": 1799840,
-    "metascore": 90,
+    "metascore": 91,
     "title": "Queen's Domain"
   },
   {
@@ -1610,6 +1620,11 @@
     "title": "RUSHING BEAT X: Return of Brawl Brothers"
   },
   {
+    "appid": 2488290,
+    "metascore": 65,
+    "title": "RUSHING BEAT X: Return of Brawl Brothers"
+  },
+  {
     "appid": null,
     "metascore": 84,
     "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl - Cost of Hope"
@@ -1658,6 +1673,11 @@
     "appid": 3636770,
     "metascore": 79,
     "title": "Servant of the Lake"
+  },
+  {
+    "appid": 750920,
+    "metascore": 76,
+    "title": "Shadow of the Tomb Raider: Definitive Edition"
   },
   {
     "appid": null,
@@ -2060,11 +2080,6 @@
     "title": "Truxton Extreme"
   },
   {
-    "appid": 1575990,
-    "metascore": 75,
-    "title": "Twisted Tower"
-  },
-  {
     "appid": 1583520,
     "metascore": 78,
     "title": "Under The Island"
@@ -2208,11 +2223,6 @@
     "appid": 3937550,
     "metascore": 74,
     "title": "Yakuza Kiwami 3 & Dark Ties"
-  },
-  {
-    "appid": 2330110,
-    "metascore": 65,
-    "title": "Yerba Buena"
   },
   {
     "appid": null,
