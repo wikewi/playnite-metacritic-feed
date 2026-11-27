@@ -1060,21 +1060,6 @@
     "title": "LIFTED"
   },
   {
-    "appid": 1677110,
-    "metascore": 75,
-    "title": "Lightyear Frontier"
-  },
-  {
-    "appid": 1677110,
-    "metascore": 75,
-    "title": "Lightyear Frontier"
-  },
-  {
-    "appid": 2482940,
-    "metascore": 68,
-    "title": "Little Nightmares VR: Altered Echoes"
-  },
-  {
     "appid": 2101390,
     "metascore": 90,
     "title": "Lost and Found Co."
@@ -1325,6 +1310,11 @@
     "title": "Nioh 3"
   },
   {
+    "appid": 2525510,
+    "metascore": 74,
+    "title": "NITRO GEN OMEGA"
+  },
+  {
     "appid": 1488490,
     "metascore": 75,
     "title": "Nivalis Nights"
@@ -1453,11 +1443,6 @@
     "appid": null,
     "metascore": 88,
     "title": "Pokemon Pokopia: Bubbly Basin"
-  },
-  {
-    "appid": 4100940,
-    "metascore": 74,
-    "title": "Poppy Playtime: Chapter 5"
   },
   {
     "appid": 4100940,
@@ -1613,16 +1598,6 @@
     "appid": 1374490,
     "metascore": 75,
     "title": "RuneScape: Dragonwilds"
-  },
-  {
-    "appid": 2488290,
-    "metascore": 65,
-    "title": "RUSHING BEAT X: Return of Brawl Brothers"
-  },
-  {
-    "appid": 2488290,
-    "metascore": 65,
-    "title": "RUSHING BEAT X: Return of Brawl Brothers"
   },
   {
     "appid": null,
@@ -1950,6 +1925,11 @@
     "title": "The Prisoning: Fletcher's Quest"
   },
   {
+    "appid": 2725470,
+    "metascore": 68,
+    "title": "The Prisoning: Fletcher's Quest"
+  },
+  {
     "appid": 2827820,
     "metascore": 51,
     "title": "The Relic: First Guardian"
@@ -2078,6 +2058,16 @@
     "appid": 3323490,
     "metascore": 79,
     "title": "Truxton Extreme"
+  },
+  {
+    "appid": 1575990,
+    "metascore": 75,
+    "title": "Twisted Tower"
+  },
+  {
+    "appid": 1575990,
+    "metascore": 75,
+    "title": "Twisted Tower"
   },
   {
     "appid": 1583520,
@@ -2223,6 +2213,16 @@
     "appid": 3937550,
     "metascore": 74,
     "title": "Yakuza Kiwami 3 & Dark Ties"
+  },
+  {
+    "appid": 2330110,
+    "metascore": 65,
+    "title": "Yerba Buena"
+  },
+  {
+    "appid": 2330110,
+    "metascore": 65,
+    "title": "Yerba Buena"
   },
   {
     "appid": null,
