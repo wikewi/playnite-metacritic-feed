@@ -151,7 +151,7 @@
   },
   {
     "appid": 2396130,
-    "metascore": 75,
+    "metascore": 72,
     "title": "Australia Did It: End-of-the-World Railway Defense Business"
   },
   {
@@ -261,7 +261,7 @@
   },
   {
     "appid": 4435490,
-    "metascore": 85,
+    "metascore": 84,
     "title": "Call of Duty: Modern Warfare 4"
   },
   {
@@ -915,6 +915,11 @@
     "title": "Homura: The Crimson Warriors"
   },
   {
+    "appid": null,
+    "metascore": 79,
+    "title": "Homura: The Crimson Warriors"
+  },
+  {
     "appid": 2821390,
     "metascore": 73,
     "title": "Hot Wheels Infinite Rush"
@@ -1058,6 +1063,16 @@
     "appid": 2184020,
     "metascore": 70,
     "title": "LIFTED"
+  },
+  {
+    "appid": 1677110,
+    "metascore": 75,
+    "title": "Lightyear Frontier"
+  },
+  {
+    "appid": 2482940,
+    "metascore": 68,
+    "title": "Little Nightmares VR: Altered Echoes"
   },
   {
     "appid": 2101390,
@@ -1600,6 +1615,11 @@
     "title": "RuneScape: Dragonwilds"
   },
   {
+    "appid": 2488290,
+    "metascore": 65,
+    "title": "RUSHING BEAT X: Return of Brawl Brothers"
+  },
+  {
     "appid": null,
     "metascore": 84,
     "title": "S.T.A.L.K.E.R. 2: Heart of Chornobyl - Cost of Hope"
@@ -1826,7 +1846,7 @@
   },
   {
     "appid": 2121510,
-    "metascore": 81,
+    "metascore": 78,
     "title": "Tenebris Somnia"
   },
   {
@@ -1918,11 +1938,6 @@
     "appid": 2466900,
     "metascore": 77,
     "title": "The Posthumous Investigation"
-  },
-  {
-    "appid": 2725470,
-    "metascore": 68,
-    "title": "The Prisoning: Fletcher's Quest"
   },
   {
     "appid": 2725470,
@@ -2055,16 +2070,6 @@
     "title": "Truckful"
   },
   {
-    "appid": 3323490,
-    "metascore": 79,
-    "title": "Truxton Extreme"
-  },
-  {
-    "appid": 1575990,
-    "metascore": 75,
-    "title": "Twisted Tower"
-  },
-  {
     "appid": 1575990,
     "metascore": 75,
     "title": "Twisted Tower"
@@ -2186,7 +2191,7 @@
   },
   {
     "appid": null,
-    "metascore": 86,
+    "metascore": 83,
     "title": "World of Warcraft: Forever"
   },
   {
@@ -2213,11 +2218,6 @@
     "appid": 3937550,
     "metascore": 74,
     "title": "Yakuza Kiwami 3 & Dark Ties"
-  },
-  {
-    "appid": 2330110,
-    "metascore": 65,
-    "title": "Yerba Buena"
   },
   {
     "appid": 2330110,
